@@ -1,0 +1,19 @@
+ <%=render '/layouts/header'%>
+
+ <h2>Seu carrinho de compras</h2>
+ <% a = JSON.parse(cookies[:carrinho]) %>
+ <% if a.size == 0%>
+ <% else%>
+    <%= link_to "Fazer Pedido", "/pedidos/new", :class => 'btn btn-primary' %>
+ <% end %>
+ <hr>
+ 
+ <% for filme in @filmes %>  
+    <h3><%= filme.titulo %><h3>
+    <dd><p><%= filme.sinopse %></dd>
+  
+   <%= link_to "Remover do Carrinho", "/remove_to_cart/#{filme.id}", method: :post, :class => 'btn btn-xs btn-danger' %>           
+
+    <hr>
+ <% end %>
+

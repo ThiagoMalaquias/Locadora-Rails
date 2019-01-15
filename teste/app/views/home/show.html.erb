@@ -1,0 +1,63 @@
+ <%=render '/layouts/header'%>
+
+  <div class="page-header">
+    <h1><%= @filme.titulo %></h1>
+  </div>
+
+  <dl class="dl-horizontal">
+    <dt><strong>Ano:</strong></dt>
+    <dd><%= @filme.ano %></dd>
+    <dt><strong>Duração:</strong></dt>
+    <dd><%= @filme.duracao %></dd>
+    <dt><strong>Diretor:</strong></dt>
+    <dd><%= @filme.diretor %></dd>
+    <dt><strong>Categoria:</strong></dt>
+     <% @cats.each do |cat| %>
+          <% if cat.id == @filme.cat_id %>
+          <dd><%= cat.nome %></dd>
+        <% end %>
+    <% end %>
+    <dt><strong>Classificação:</strong></dt>
+    <% @classis.each do |classi| %>
+          <% if classi.id == @filme.classi_id %>
+          <dd><%= classi.nome %></dd>
+        <% end %>
+    <% end %>
+    <hr>
+     <dt><strong>Sinopse:</strong></dt>
+    <dd><p><%= @filme.sinopse %></dd>
+  </dl>
+
+<% a = JSON.parse(cookies[:carrinho]) %>
+
+<%if user_signed_in? %>
+    <%if a.include?("#{@filme.id}")%>
+      <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10">
+            <%= link_to "Remover do Carrinho", "/remove_to_cart/#{@filme.id}", method: :post, :class => 'btn btn-danger' %>           
+          </div>
+      </div>
+    <%else%>
+      <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10">
+            <%= link_to "Adicionar ao carrinho", "/add_to_cart/#{@filme.id}", method: :post, :class => 'btn btn-primary' %>           
+          </div>
+      </div>
+    <%end%>
+<%else %>
+    <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10">
+            <%= link_to "Faça seu login para adicionar ao carrinho", "/users/sign_in", method: :post, :class => 'btn btn-primary' %>           
+          </div>
+      </div>
+<%end %>
+
+
+
+
+
+
+
+
+
+

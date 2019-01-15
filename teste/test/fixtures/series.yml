@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: 
+  ano: 
+  duracao: 
+  diretor: 
+  sinopse: 
+  temporadas: 
+  cat: 
+  classi: one
+
+two:
+  titulo: 
+  ano: 
+  duracao: 
+  diretor: 
+  sinopse: 
+  temporadas: 
+  cat: 
+  classi: two

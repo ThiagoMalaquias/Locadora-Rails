@@ -1,0 +1,79 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+         <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Locadora Rails</a>
+        
+        <%if user_signed_in? %> 
+          <% a = JSON.parse(cookies[:carrinho]) %>
+           <% if current_user.role == 'admin' %>
+             <li class="nav-item">
+               <a href="javascript:;" class="nav-link navbar-brand" style="float: right;" data-toggle="dropdown" id="navDrop" aria-expanded="false">
+                 <%= current_user.email%>
+               </a>
+               <div class="dropdown-menu dropdown">
+                 <%= link_to "Cadastrar Filmes", "/filmes/new", :class => 'dropdown-item'  %>          
+                 <%= link_to "Editar Filmes", "/filmes", :class => 'dropdown-item' %>
+                 <%= link_to "Pedidos", "/pedidos", :class => 'dropdown-item'  %>
+                 <%= link_to "Sair", destroy_user_session_path, :method => :delete,
+                                                                :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm",         :default => 'Tem certeza que deseja sair?')) }, 
+                                                                :class => 'dropdown-item' %>
+               </div>
+            </li>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+              <ul class="nav navbar-nav">
+                <% @cats.each do |cat| %>
+                   <li><%= link_to "#{cat.nome}", "/cat/#{cat.id}-#{cat.nome}"  %></li>
+                <%end%>
+              </ul>
+           </div>
+        <% else%>
+            <%= link_to "Sair", destroy_user_session_path, :method => :delete,        
+                                                           :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm",         :default => 'Tem certeza que deseja sair?')) }, 
+                                                           :class => 'navbar-brand', :style => "float: right;" %>
+            <a class="navbar-brand" style="float: right;" href="/carrinho">My Cart(<%=a.size%>)</a>
+
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+              <ul class="nav navbar-nav">
+                <% @cats.each do |cat| %>
+                   <li><%= link_to "#{cat.nome}", "/cat/#{cat.id}-#{cat.nome}"  %></li>
+                <%end%>
+              </ul>
+           </div>
+        <%end%>
+
+        <%else %>
+        <a class="navbar-brand" style="float: right;" href="/users/sign_up">SIGN UP</a>
+        <a class="navbar-brand" style="float: right;" href="/users/sign_in">LOGIN</a>
+        <a class="navbar-brand" style="float: right;" href="/carrinho">My Cart</a>
+          
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <% @cats.each do |cat| %>
+               <li><%= link_to "#{cat.nome}", "/cat/#{cat.id}"  %></li>
+            <%end%>
+
+           
+          </ul>
+        </div>
+
+        <%end%>
+      </div>
+    </div> 
+    </div>
+             
+             <script type="text/javascript">
+                 $("#navDrop").click(function(){
+                  var menu = $(this).parents(".nav-item").find(".dropdown-menu");
+                  if(menu.css("display") == "none"){
+                    menu.show();
+                  }
+                  else{
+                    menu.hide();
+                  }
+                 })
+               </script>

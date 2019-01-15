@@ -1,0 +1,27 @@
+<%=render '/layouts/header'%>
+
+<h1><%= @cat.nome %></h1>
+	<hr>
+
+	  <% @filmes.each do |tb_filme| %> 
+			<% if tb_filme.cat_id == @cat.id %>
+               <div class="demo-3"> 
+                 <figure>
+                   <img><%= image_tag("#{tb_filme.titulo}.jpg")%> 
+
+                   <figcaption>
+                     <h2><%= tb_filme.titulo %></h2>
+                       <div>
+                          <p><%= tb_filme.sinopse.at(0..200) %>... </p>     
+                       </div>			
+          					   <div class="button">
+          						  <a href="<%=home_path(tb_filme)%>" class="mais">Saiba Mais</a>
+          					   </div>
+                    </figcaption>
+                    
+                  </figure>
+                </div>
+            <% end %>
+      <% end %>
+
+

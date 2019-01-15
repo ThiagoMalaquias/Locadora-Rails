@@ -1,0 +1,625 @@
+/* ServiceDesk Plus Online Demo Login Stylesheet */
+
+body 		{ 	margin:0px; padding:0px; }
+
+span.footerfontstyle	{ font-family:Arial, Helvetica, sans-serif; line-height:16px; letter-spacing:1px; font-size:10px; }
+span.footerfontstyle1	{ font-family:Arial, Helvetica, sans-serif; line-height:22px; letter-spacing:1px; font-size:10px; }
+span.footerfontstyle2	{ color: #838383; font-family:Arial, Helvetica, sans-serif; line-height:21px; letter-spacing:1px; font-size:10px; }
+a.supportmail			{  text-decoration: underline; color:#2c5787; font-size:11px; text-decoration:none; letter-spacing:1px; }
+a.supportmail:hover		{ text-decoration: underline; }
+
+table#reminder{margin:0px;padding:0px; font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+table#reminder .center{background-color:#f0f5fd;border-bottom:1px solid #90add2;border-top:1px solid #90add2;}
+
+table#reminder .leftedge{
+    background: url(../images/remind_left.gif) no-repeat;
+    border:0px;
+    width:31px;
+    height:237px;
+}
+.gecko table#reminder .leftedge{
+    
+    background: url(../images/remind_left.gif) no-repeat left top;
+    border:0px; 
+    !important; width:31px; height:237px;
+    
+}
+
+.opera table#reminder .leftedge{
+	background: url(../images/remind_left.gif) no-repeat left top;
+	border:0px; 
+	!important; width:31px; height:237px;
+}
+
+table#reminder .rightedge{
+    background: url(../images/remind_right.gif) no-repeat;
+    border:0px;
+    width:19px;
+    height:237px;
+}
+
+.gecko table#reminder .rightedge{
+	background: url(../images/remind_right.gif) no-repeat left top;
+    border:0px; 
+    !important; width:19px; height:237px;
+}
+
+.opera table#reminder .rightedge{
+	background: url(../images/remind_right.gif) no-repeat left top;
+    border:0px; 
+    !important; width:19px; height:237px;
+}
+
+table#reminder .content{height:150px;padding:5px 5px 5px 5px; }
+
+table#reminder h1{ 
+	font-size:14px; color:#224fad; padding:2px 3px 2px 28px;background: url(../images/remind_pin.png) no-repeat left top; height:30px; margin:0px 0px 0px 0px;
+}
+
+table#reminder .button{
+	border:1px solid #c0b83c;background-color:#fbf8cc; font-size:11px;color:#484803; text-decoration:none; font-weight:bold; padding:3px; margin:2px; 
+}
+
+table#reminder .button:hover{background:#ede89f;}
+
+.fontBlackBold {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.fontWhitebold {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.fontWhitebold2 {
+        font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+	color: #CCCCCC;
+	text-decoration: none;
+        font-size: 14px;
+}
+
+.fontBlackBold a {
+	font-weight: bold;
+}
+
+.fontBlack {
+    
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    color: #000000;	
+}
+
+.mytasksAddShow{
+	padding:0px 0px 0px 5px;
+}
+
+.mytasksAddShow a{
+	font-size:11px; 
+	font-weight:normal; 
+	padding:2px;
+	text-decoration:none;
+	color:#000;
+	border:1px solid #bad2f2;
+	height:20px;
+    
+} 
+
+.mytasksAddShow a:hover{
+	color:#000000;
+	border:1px solid #92baf9;
+	background-color: #d0e1fc;
+}
+
+
+#bottombg .borderedLink a{
+	font-weight: bold;
+	background-color:#FFFFF6;
+	border: 1px solid #95A8C0;
+	padding: 1px 7px 1px 7px;
+	color: #333;
+	white-space: nowrap;
+	text-decoration:none;
+	height:17px;
+}
+
+#bottombg .borderedLink a:hover{
+	font-weight: bold;
+	background-color:#C9D6E8;
+	border: 1px solid #36547C;	
+	padding: 1px 7px 1px 7px;
+	color: #000;
+	white-space: nowrap;
+    
+}
+
+.FontBlackLink {
+    
+	color: #000000;
+	text-decoration: underline;
+    
+    
+}
+
+.FontBlackLinkDisabled {
+	color: #999999;
+	text-decoration: underline;
+}
+
+.fontHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #3466A9;
+}
+.fontHead #normaltext{
+	font-size: 10px; 	
+	font-weight: normal; 	
+	color: #000;
+}
+
+
+.fontHead {
+	font: 11px verdana, Arial, Helvetica, sans-serif; 	
+	font-weight: bold;
+	color:#3466A9;
+    
+	background-color:#fff;
+	border-bottom: 3px solid #9BAFCB;
+	padding:2px 3px 4px 3px ;
+}
+
+.fontHead td{
+	font: 11px verdana, Arial, Helvetica, sans-serif; 	
+	font-weight: bold; 	
+	color: #3466A9;
+    
+}
+
+.rowHiliten td{
+	/*
+	border-bottom:1px solid #cccccc;
+	border-top:1px solid #cccccc;
+	*/
+	background-color: #FCFCCE;
+	height:22px;
+	padding-left:3px;	
+}
+
+.fontBigBold {
+	font-size: 13px;
+	font-weight: bold;
+	color: #2D5893;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+.tableHeader{
+	font-size: 10px;
+	font-weight: bold;
+	color: #174F02;
+	/*text-align: left;*/
+	background:  #D4E1D5 url(../images/linha_rodape.gif) repeat-x left top;
+  	white-space: nowrap;
+}
+
+.sortTableHeader{
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #D4E1D5;
+	color: #174F02;
+	/*text-align: left;*/
+	background:  url(../images/columnsortheadbg.gif) repeat-x left top;
+  	white-space: nowrap;
+}
+
+.sortTableHeaderRed{
+	font-size: 10px;
+	font-weight: bold;
+	color: #CC9999;
+	/*text-align: left;*/
+	background:  #FFCCCC repeat-x left top;
+  	white-space: nowrap;
+}
+
+
+.sortTableCells{
+	background-color: c8e1d5;
+	white-space: nowrap;
+	font-size: 10px;
+	color: #000000;
+	height:22px;
+	padding-left:3px;
+	font-weight: bold;
+
+}
+
+
+
+.tableHeader a, .sortTableHeader a{
+	font-weight: bold;
+	color: #174F02;
+	text-decoration: none;
+}
+
+
+.tableHeader a:hover, .sortTableHeader a:hover {
+	font-weight: bold;
+	color: #000;
+}
+
+@media all{
+.resumeRow {
+	background-color: #C8D9FF;
+	font-size: 12px;
+	color: #000000;
+	height:22px;
+	padding-left:3px;
+        -webkit-print-color-adjust: exact;
+}
+
+.totalRow {
+	background-color: #90AEEF;
+	font-size: 12px;
+	color: #000000;
+	height:22px;
+	padding-left:3px;
+        -webkit-print-color-adjust: exact;
+}
+
+.evenRow {
+	background-color: #FFFFFF;
+	font-size: 12px;
+	color: #000000;
+	height:22px;
+	padding-left:3px;
+        -webkit-print-color-adjust: exact;
+}
+
+
+.oddRow {
+	background-color: #ECECEC;
+	font-size: 12px;
+	color: #000000;
+	height:22px;
+	padding-left:3px;
+        -webkit-print-color-adjust: exact;
+}
+}
+
+.oddRow a img, .evenRow a img {
+    border:0px;
+}
+
+a.adminlinks {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-decoration:underline;
+}
+
+a.adminlinks:hover{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FF0000;
+	text-decoration:underline;
+}
+
+.adminlinksSelect {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.adminlinksSelect a{
+	background-color: #D5DEEE; 
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+	width:75%;
+	display: block;
+	height:auto;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-right: 3px solid #ffffff;
+	border-bottom: 3px solid #ffffff;
+}
+
+.adminlinksSelect a:hover{
+	font-size: 10px;
+	background-color: #D5DEEE; 
+	border-top: 3px solid #ffffff;
+	border-left: 3px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+
+.editquantitylink{
+	background: transparent url("../images/editicon.gif") no-repeat right center;
+	font-size: 10px;
+	font-weight: normal;
+	width:70px;
+	display: block;
+	padding: 2px 0px 0px 0px;
+	text-decoration:none;
+	border: 1px solid #F0F4F0;
+	background-color: #F0F4F0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+a.editquantitylink:hover{
+    
+	border: 1px solid #fff;
+	background-color: #D3E1D3;
+	border: 1px solid #B6C5B6;
+    
+}
+
+.noEditquantitylink{
+	font-size: 10px;
+	font-weight: normal;
+	width:70px;
+	display: block;
+	padding: 2px 0px 0px 0px;
+	text-decoration:none;
+	border: 1px solid #F0F4F0;
+	background-color: #F0F4F0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+a.noEditquantitylink:hover{
+	border: 1px solid #fff;
+	background-color: #D3E1D3;
+	border: 1px solid #B6C5B6;
+}
+
+.rowOddn td{
+	background-color: #FFFFFF;
+	height:22px;
+	padding-left:3px;
+}
+.rowOddn a{
+	color: #000000;
+	font-weight: normal;
+}
+
+.formStyle {
+	border: 1px solid #616F45;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	padding-left: 2px;
+	background:  #fff url(../images/formshdw.gif) no-repeat -2px -2px;
+}
+
+.formStyleButton {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	width: auto;
+	padding: 0px 2px 0px 2px;
+	background-image:  url("../images/buttonbg.gif");
+	background-color: #C6C5D7;
+	cursor: pointer;
+	background-repeat: repeat-x;
+	height: auto;
+}
+
+.tabSelLeft {
+	background: url(../images/tab_sel_lefttaper.gif) top right no-repeat;
+	width:7px;
+	height:20px;
+}
+.tabSelCenter{
+	background: url(../images/tab_sel_bg.gif) repeat-x top right;
+	
+}
+.tabSelRight {
+	background: url(../images/tab_sel_righttaper.gif) top right no-repeat;
+	width:7px;
+	height:20px;
+}
+.tabunSelLeft {
+	background: url(../images/tab_unsel_lefttaper.gif) top right no-repeat;
+	width:7px;
+	height:20px;
+}
+.tabunSelCenter{
+	background: url(../images/tab_unsel_bg.gif) top right repeat-x;
+	
+}
+.tabunSelRight {
+	background: url(../images/tab_unsel_righttaper.gif) top right no-repeat;
+	width:7px;
+	height:20px;
+}
+
+.celllink a, .celllink a:hover {
+	width: 100%;
+	display: block;
+	padding-left:4px;
+	padding-right:4px;
+	white-space:nowrap;
+}
+
+.filter {
+	border: #89A00F 1px solid;
+	vertical-align: middle;
+}
+
+.DashboardTableColor{
+background:#3466a9;
+}
+
+.listViewTableHeader{
+background:  url(../images/tableheaderr.gif) no-repeat right top #3466A9;
+}
+
+
+.tablink, .sumtab {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.tablink:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	display: block;
+}
+
+a.sumtab:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FF0000;
+	display: block;
+}
+
+.tablinkwhite{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+	width: 100%;padding-left:6px;
+}
+
+a.tablinkwhite:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	display: block;
+}
+
+
+
+
+.tableHead {
+	background:  url(../images/tableheader.gif) no-repeat right top #3466A9;
+	padding: 4px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.fontgray {
+	color: #999999;
+}
+
+.whitebgBorder {
+	border: 1px solid #8CBAE8;
+    
+}
+.oddRowBold {
+	background-color: #ECECEC;
+	font-size: 10px;
+	color: #000000;
+	height:22px;
+	padding-left:3px;
+	font-weight: bold;
+
+}
+.evenRowBold {
+	background-color: #FFFFFF;
+	font-size: 10px;
+	color: #000000;
+	height:22px;
+	padding-left:3px;
+	font-weight: bold;
+}
+
+.requestBox {
+	background-color: #FFFFF4;
+	border-top: 3px solid #EAEAD4;
+	border-right: 3px solid #C3C39B;
+	border-bottom: 3px solid #C3C39B;
+	border-left: 3px solid #EAEAD4;
+}
+.requestBox #topbg{
+	background-color: #D4D4AC;
+	padding:4px;
+	border-bottom: 1px solid #999;
+}
+.requestBox #bottombg{
+	background-color: #EFEFD3;
+}
+
+.requestBox #subheading{
+	font-weight: bold;
+	background:  url(../images/dottedline.gif) repeat-x left bottom;
+}
+
+.fontHeadGreen {
+	font: 11px verdana, Arial, Helvetica, sans-serif; 	
+	font-weight: bold;
+	color:#95A22C;
+    
+	background-color:#fff;
+	border-bottom: 3px solid #95A22C;
+	padding:2px 3px 4px 3px ;
+}
+
+.fontHeadGreen td{
+	font: 11px verdana, Arial, Helvetica, sans-serif; 	
+	font-weight: bold; 	
+	color: #95A22C;
+    
+}
+
+.fontHeadBlack {
+	font: 11px verdana, Arial, Helvetica, sans-serif; 	
+	font-weight: bold;
+	color:#000000;
+    
+	background-color:#fff;
+	border-bottom: 3px solid #000000;
+	padding:2px 3px 4px 3px ;
+}
+
+.fontHeadBlack2 {
+	font: 11px verdana, Arial, Helvetica, sans-serif; 	
+	font-weight: bold;
+	color:#000000;
+    
+	background-color:#fff;
+	border-bottom: 3px solid #000000;
+        border-top: 3px solid #000000;
+	padding:2px 3px 4px 3px ;
+}
+
+
+.fontHeadBlack td{
+	font: 11px verdana, Arial, Helvetica, sans-serif; 	
+	font-weight: bold; 	
+	color: #000000;
+    
+}
+
+.fontHeadRed { 
+	font: bold 11px verdana, Arial, Helvetica, sans-serif;
+	color:#CC9999;
+    
+	background-color:#fff;
+	border-bottom: 3px solid #CC9999;
+	padding:2px 3px 4px 3px ;
+}
+
+.fontHeadRed td{
+	font: bold 11px verdana, Arial, Helvetica, sans-serif; 	
+	color: #CC9999;
+    
+}

@@ -1,0 +1,117 @@
+
+
+    /*.swiper-container {
+      width: 100%;
+      height: 50%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      min-height: 300px;   
+   }
+*/
+   .demo-3 {
+    position:relative;
+    width:195px;
+    height:300px;
+    overflow:hidden;
+    float:left;
+    margin: 0px 5px 59px 5px;
+}
+.demo-3 figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    width: 194px;
+}
+.demo-3 figure img {
+    display:block;
+    position:relative;
+    z-index:6;
+    width: 100%;
+    height: 100%;
+
+}
+.demo-3 figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:15;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+.demo-3 figure h2 {
+    font-family:'Lato';
+    color:#fff;
+    font-size:20px;
+    text-align:left
+}
+
+.demo-3 figure p {
+    display:block;
+    font-family:'Arial';
+    font-size:13px;
+    line-height:18px;
+    margin: 10px 0 0 0;
+    color:#fff;
+    text-align: justify;
+}
+.demo-3 figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding: 0px 22px;
+    background-color:rgba(0,0,0,.5);
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo-3 figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo-3 figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.demo-3 figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+.button{
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+
+.bol{
+  margin: 10px -48px;
+  float: right;
+}
+
+.mais{
+    background: #e52a6f;
+    border: none;
+    color:#fff;
+    margin: 35% 0 0 60px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.mais:hover ,.botao:hover{
+  background: rgba(0,0,0,.5); 
+  color:#e52a6f;
+  transition: 1s all;
+  text-decoration:none;
+}

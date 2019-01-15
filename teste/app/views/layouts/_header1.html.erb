@@ -1,0 +1,21 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+         <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Locadora Rails</a>
+        <a class="navbar-brand" style="margin: 0 0 0 50%" href="/mycart">My Cart</a>
+        
+        <%if user_signed_in? %>       
+           <a><%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => 'navbar-brand' %></a>              
+        <%else %>
+          <a class="navbar-brand" href="/users/sign_in">LOGIN</a>
+          <a class="navbar-brand" href="/users/sign_up">SIGN UP</a>
+        <%end%>
+  
+      </div>
+    </div> 
+    </div>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora Rails</title>
+    <%= csrf_meta_tags %>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <%= favicon_link_tag "Cinema.png" %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+
+    <!--link href="https://getbootstrap.com/docs/4.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://getbootstrap.com/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script-->
+
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9" style="margin-top: 10%;">
+          <%= bootstrap_flash %>
+          <%= yield %>
+        </div>
+        <div class="col-lg-3" style="margin-top: 10%;">
+          <div class="well sidebar-nav">
+            <h3>Top 5</h3>
+            <ul class="nav nav-list ">
+                <li><%= link_to "Vingadores", "/home/1"  %></li>
+                <li><%= link_to "X-Men: Dias de um Futuro Esquecido", "/home/4"  %></li>
+                <li><%= link_to "Seven - Os Sete Crimes Capitais", "/home/24"  %></li>
+                <li><%= link_to "Batman", "/home/2"  %></li>
+                <li><%= link_to "Mamma Mia", "/home/20"  %></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <footer>
+        <p>&copy; Company 2018</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
+
+
+
